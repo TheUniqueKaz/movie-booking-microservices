@@ -41,6 +41,6 @@ public class PaymentService {
 
         kafkaTemplate.send("payment-success-topic", jsonMessage);
 
-        System.out.println("📣 Đã báo tin lại cho Booking Service: " + jsonMessage);
+        System.out.println("Đã báo tin lại cho Booking Service: " + jsonMessage);
     }
 }
